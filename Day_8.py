@@ -45,25 +45,14 @@ for instruction in instructions:
     value_tup = [val.strip() for val in value.split(',')]
     mapping[key] = value_tup
 
-""" current_place = 'AAA'
+current_place = 'AAA'
 lr_key_counter = 0
 while current_place != 'ZZZ':
     lr = left_right_key[left_right[lr_key_counter % key_length]]
     current_place = mapping[current_place][lr]
     lr_key_counter += 1
 
-print(f'Part 1: {lr_key_counter}')  # Answer: 17141 """
-
-""" current_places = a_starts
-lr_key_counter = 0
-while not all(place[-1] == 'Z' for place in current_places):
-    lr = left_right_key[left_right[lr_key_counter % key_length]]
-    for i in range(len(current_places)):
-        current_place = current_places[i]
-        current_places[i] = mapping[current_place][lr]
-    lr_key_counter += 1
-    print(current_places)
-print(f'Part 2: {lr_key_counter}') """
+print(f'Part 1: {lr_key_counter}')  # Answer: 17141
 
 start_indices = []
 for start in a_starts:
